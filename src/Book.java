@@ -1,12 +1,15 @@
-class Book {
+
+
+public class Book {
 
     // Private data members
     private int bookId;
     private String title;
     private boolean issued;
+    private String author;
 
     // Constructor
-    public Book(int bookId, String title) {
+    public Book(int bookId, String title, String author) {
         this.bookId = bookId;
         this.title = title;
         this.issued = false;
@@ -22,6 +25,10 @@ class Book {
 
     public boolean isIssued() {
         return issued;
+    }
+
+    public String getAuthor(){
+        return author;
     }
 
     public void issueBook() {
